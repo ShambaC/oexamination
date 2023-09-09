@@ -96,7 +96,8 @@ exports.editAnswer = async (req, res) => {
               marks += question.mark;
               return resolve({ ...ans, mark: question.mark });
             } else {
-              return resolve({ ...ans, mark: 0 });
+              marks += question.negmark;
+              return resolve({ ...ans, mark: question.negmark });
             }
           } else {
             return reject("Question was not found");

@@ -23,6 +23,7 @@ const ExamSchema = new mongoose.Schema(
         title: String,
         options: [{ option: String, isanswer: Boolean }],
         mark: Number,
+        negmark: Number,
       },
     ],
     startingtime: {
