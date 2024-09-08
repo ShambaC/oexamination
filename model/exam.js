@@ -21,6 +21,7 @@ const ExamSchema = new mongoose.Schema(
     questions: [
       {
         title: String,
+        imgLink: String,
         options: [{ option: String, isanswer: Boolean }],
         mark: Number,
         negmark: Number,
